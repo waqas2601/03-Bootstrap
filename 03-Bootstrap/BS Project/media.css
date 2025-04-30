@@ -1,0 +1,63 @@
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .btn-outer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: center !important;
+  }
+
+  .btn-outer {
+    padding-bottom: 5px;
+  }
+
+  .bannercontent h1 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 5px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+  .bannercontent p,
+  .bannercontent ul li {
+    font-size: 16px;
+  }
+
+  .formbanner {
+    padding: 20px;
+  }
+
+  .highlight-section h2 {
+    font-size: 28px;
+  }
+
+  #Image1 {
+    background-image: url(./img/ecofriendly.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+  }
+  #Image2 {
+    background-image: url(./img/healing.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+  }
+  #Image3 {
+    background-image: url(./img/sideeffect.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1170px;
+  }
+}

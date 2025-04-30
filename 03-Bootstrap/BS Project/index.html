@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <title>Project</title>
+  </head>
+  <body>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enmodal"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Natural Products
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="formbanner p-3">
+              <h3>Order Your Favorite Product Now!</h3>
+              <p>Pay for your favorite products with 20% off.</p>
+
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" /><br />
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone</label>
+
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1">+92</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="phone"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <button>Order</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="bookdemo"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Natural Products
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="" class="formbanner p-3">
+              <h3>Buy The Product Now With 20% Off!</h3>
+              <!-- <p>Pay for your favorite products with 20% off.</p> -->
+
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" /><br />
+                <label class="form-label">Coupon Code</label>
+                <input type="password" class="form-control" />
+              </div>
+              <div class="mb-3" id="phone">
+                <label class="form-label">Phone</label>
+
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1">+92</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="phone"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <button>Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="container-fluid bg-white shadow-lg top-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <figure class="col-lg-6 col-12 text-lg-start text-center mb-0 pb-0">
+            <img
+              src="./img/logo.png"
+              class="img-fluid"
+              style="height: 100px; width: 200px"
+              alt="Logo"
+            />
+          </figure>
+          <div class="col-lg-6">
+            <div
+              class="btn-outer bg-white text-center d-flex gap-3 justify-content-end"
+            >
+              <button class="btn btn-outline-success">
+                <i class="fa-brands fa-whatsapp"></i> Contact Us
+              </button>
+              <button class="btn btn-outline-info">
+                <i class="fa-solid fa-phone"></i>Call Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="Image1"></div>
+        <div class="carousel-item" id="Image2"></div>
+        <div class="carousel-item" id="Image3"></div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="products" class="container-fluid py-lg-5 py-sm-4 py-3">
+      <div class="container">
+        <div class="row justify-content-between gy-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="bannercontent">
+              <h1>Explore Our <span> Herbal</span> Products</h1>
+              <p>
+                Embrace nature's healing touch with our pure herbal products.
+              </p>
+
+              <ul class="m-0 p-0">
+                <li class="mb-3">
+                  <i class="fa-solid fa-circle-check"></i> Specialization: Pure
+                  Homemade Products
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-circle-check"></i> Min sell of 20
+                  cottons
+                </li>
+                <li class="mb-3">
+                  <i class="fa-solid fa-circle-check"></i> 50+ products only
+                </li>
+              </ul>
+              <div class="bannercontentbtn d-flex gap-3">
+                <button data-bs-toggle="modal" data-bs-target="#bookdemo">
+                  Buy Now 20% Off
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#enmodal">
+                  <i class="fa-solid fa-bag-shopping"></i> Order More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <form id="contact" action="" class="formbanner shadow-lg">
+              <h3>Order Your Favorite Product Now!</h3>
+              <p>Pay for your favorite products with 20% off.</p>
+
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" /><br />
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone</label>
+
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1">+92</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="phone"
+                    aria-label="Username"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <button>Confirm</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container shadow-lg mt-5 countersection">
+        <div class="row row-cols-lg-5 row-cols-1 p-4">
+          <div class="col">
+            <h2>50+</h2>
+            <p>Products Available</p>
+          </div>
+          <div class="col">
+            <h2>20 Cottons</h2>
+            <p>Min Sell</p>
+          </div>
+          <div class="col">
+            <h2>10.5k</h2>
+            <p>Customers</p>
+          </div>
+          <div class="col">
+            <h2>24hrs</h2>
+            <p>Store Timing</p>
+          </div>
+          <div class="col">
+            <h2>1st May</h2>
+            <p>New Product Launching</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="container-fluid highlight-section py-5">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <h2>Essential Benifits Of Our Products</h2>
+            <p>
+              Unlock the natural power of herbs for a healthier, balanced life.
+            </p>
+          </div>
+        </div>
+        <div class="row gy-3">
+          <div class="col-lg-4 col-sm-6">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlightitem"
+            >
+              <img
+                src="./img/natural.jpg"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+              <div>
+                <h4>100% Natural</h4>
+                <p>Pure plants extract</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlightitem"
+            >
+              <img
+                src="./img/healing.jpg"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+              <div>
+                <h4>Healing Power</h4>
+                <p>Body's natural healing</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlightitem"
+            >
+              <img
+                src="./img/sideeffect.jpg"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+              <div>
+                <h4>Minimal Side Effects</h4>
+                <p>Gentle on the body</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlightitem"
+            >
+              <img
+                src="./img/ecofriendly.jpg"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+              <div>
+                <h4>Eco-Friendly</h4>
+                <p>Sustainably sourced ingredients</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlightitem"
+            >
+              <img
+                src="./img/health.jpg"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+              <div>
+                <h4>Long-Term Health</h4>
+                <p>Promotes wellness for lasting</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div
+              class="bg-white p-3 d-flex align-items-start gap-3 highlightitem"
+            >
+              <img
+                src="./img/cost.jpg"
+                alt=""
+                style="width: 60px; height: 60px"
+              />
+              <div>
+                <h4>Cost Effective</h4>
+                <p>Cost less than prescription drugs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2>
+                Curriculum of <br />
+                Our Natural Products
+              </h2>
+              <p>
+                Our product development curriculum is rooted in natural
+                wellness, focusing on the careful blending of herbs, quality
+                control, and sustainable practices to deliver safe and effective
+                herbal solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 Mytab">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Overview
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Ingredients
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-contact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-contact"
+                  aria-selected="false"
+                >
+                  Benefits
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-Use"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-use"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-Use"
+                  aria-selected="false"
+                >
+                  How to Use
+                </button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+                tabindex="0"
+              >
+                Our herbal products are crafted with nature’s finest
+                ingredients, designed to promote overall wellness without
+                harmful chemicals. Each product is developed with care, ensuring
+                purity, safety, and effectiveness for your everyday needs.
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+                tabindex="0"
+              >
+                We use carefully selected herbs such as Aloe Vera, Amla, Neem,
+                and Tulsi, known for their healing and nourishing properties.
+                All ingredients are 100% natural, ethically sourced, and free
+                from synthetic additives or preservatives.
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-contact"
+                role="tabpanel"
+                aria-labelledby="pills-contact-tab"
+                tabindex="0"
+              >
+                <ul>
+                  <li>Strengthens hair and reduces hair fall</li>
+
+                  <li>Nourishes the skin for a natural glow</li>
+
+                  <li>Boosts immunity and detoxifies the body</li>
+
+                  <li>Safe for all skin and hair types</li>
+
+                  <li>No side effects or harsh chemicals</li>
+                </ul>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-use"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+                tabindex="0"
+              >
+                <p>
+                  We use carefully selected herbs such as Aloe Vera, Amla, Neem,
+                  and Tulsi, known for their healing and nourishing properties.
+                  All ingredients are 100% natural, ethically sourced, and free
+                  from synthetic additives or preservatives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="container-fluid py-5 bg-body-secondary">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="text-center fw-bold">
+              Kudrat-E-Noor Products <br />FAQs
+            </h2>
+            <p>
+              Have questions? Find answers to the most common queries about our
+              herbal products.
+            </p>
+
+            <div class="accordion" id="accordionExample">
+              <!-- Item 1 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                  >
+                    Are your herbal products safe to use daily?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, our products are made from 100% natural ingredients and
+                    are safe for daily use...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                  >
+                    Do your herbal products have any side effects?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Our products are chemical-free and generally have no side
+                    effects...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                  >
+                    How should I store the products?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Keep them in a cool, dry place away from sunlight to
+                    maintain quality...
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="accordion-item mb-3">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                  >
+                    Are your products suitable for all skin types?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    Yes, our herbal formulas are gentle and ideal for all skin
+                    types...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Al-Noor Naturals</h5>
+            <p>
+              Pure, natural, and effective herbal products crafted to promote
+              your health and well-being—safely and sustainably.
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#products" class="text-light text-decoration-none"
+                  >Our Products</a
+                >
+              </li>
+              <li>
+                <a href="#benefits" class="text-light text-decoration-none"
+                  >Benefits</a
+                >
+              </li>
+              <li>
+                <a href="#faq" class="text-light text-decoration-none">FAQs</a>
+              </li>
+              <li>
+                <a href="#" class="text-light text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="text-uppercase fw-bold">Get in Touch</h5>
+            <p>
+              <i class="bi bi-envelope-fill"></i> support@al-noornaturals.com
+            </p>
+            <p>
+              <i class="bi bi-geo-alt-fill"></i> Nehr Chowk Mardan, Khyber
+              Pakhtunkhwa
+            </p>
+          </div>
+        </div>
+
+        <hr class="border-light" />
+
+        <div class="text-center">
+          <p class="mb-0">&copy; 2025 Al-Noor Naturals. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"></script>
+</html>

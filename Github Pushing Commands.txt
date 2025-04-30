@@ -1,0 +1,5 @@
+git clone "repo link"
+
+git add .
+git commit -m "any message goes here"
+git push origin main
